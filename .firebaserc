@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "ajportbase"
+  },
+  "targets": {
+    "ajportbase": {
+      "hosting": {
+        "ajstudio": ["ajstudio"]
+      }
+    }
+  }
+}

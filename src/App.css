@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}@keyframes gradientBase {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradientBase {
+  background-size: 400% 400%;
+  animation: gradientBase 60s ease infinite;
+}
+
+@keyframes blob1 {
+  0% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(40px,-30px) scale(1.05); }
+  50% { transform: translate(-30px,20px) scale(0.95); }
+  75% { transform: translate(20px,40px) scale(1.1); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+@keyframes blob2 {
+  0% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(-50px,40px) scale(1.05); }
+  50% { transform: translate(30px,-30px) scale(1); }
+  75% { transform: translate(-20px,20px) scale(0.95); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+@keyframes blob3 {
+  0% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(60px,-40px) scale(1.05); }
+  50% { transform: translate(-40px,30px) scale(0.95); }
+  75% { transform: translate(30px,10px) scale(1.1); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+@keyframes blob4 {
+  0% { transform: translate(0,0) scale(1); }
+  25% { transform: translate(-30px,20px) scale(1.05); }
+  50% { transform: translate(20px,-20px) scale(1); }
+  75% { transform: translate(-10px,30px) scale(0.95); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+.animate-blob1 { animation: blob1 40s ease-in-out infinite; }
+.animate-blob2 { animation: blob2 50s ease-in-out infinite; }
+.animate-blob3 { animation: blob3 60s ease-in-out infinite; }
+.animate-blob4 { animation: blob4 45s ease-in-out infinite; }
